@@ -1,0 +1,44 @@
+
+//COLOR VARIABLE
+$color-black: #000000;
+$color-white: #ffffff;
+$color-gray: #444b54;
+$color-gray-light: #adc7cd;
+$color-green: #11967D;
+$color-green-ligth: #41ceb3;
+
+
+// RESPONSIVE BREAKPOINTS
+// 0 - 600px: mobile
+// 600 - 900px: Tablet portrait
+// 900 - 1200px: Tablet Landscape
+// [1200 - 1800px] é onde esta estilos normais
+// 1800px +: Big desktop 
+
+$bp-largest: 1800px;
+$tab-large: 1200px;
+$bp-medium: 900px;
+$bp-small: 600px;
+
+*,
+*::before,
+*::after{
+    padding: 0;
+    margin: 0;
+    box-sizing: inherit;
+}
+
+html{
+    box-sizing: border-box;
+    font-size: 10px;
+}
+
+body{
+    line-height: 1.6; 
+  
+}
+
+.container{
+    overflow: hidden;
+}
+

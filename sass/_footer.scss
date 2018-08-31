@@ -1,0 +1,109 @@
+.footer{
+    &-nav{
+        background-color: $color-gray-light;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+        padding: 5rem 7%;
+        
+        @media only screen and (max-width: 830px){
+            grid-template-columns: 1fr;
+            text-align: center;
+            padding: 5rem 2% 3rem;
+        }
+       
+        &__redeSociais{
+            @media only screen and (max-width: 830px){
+                text-align: center;
+                margin-bottom: 3rem;
+            }
+
+            a img{
+               padding-right: 1rem;
+
+                @media only screen and (max-width: 830px){
+                    padding: 0 .25rem
+                }
+            }
+        }
+
+        p {
+            text-align: right;
+
+            @media only screen and (max-width: 830px){
+                text-align: center;
+                width: auto;
+                display: block;
+            }
+        }
+
+        &__contato--link{            
+            &,
+            &:link,
+            &:visited{
+                font-size: 1.3rem;
+                text-decoration: none;
+                color: $color-gray;
+                margin-top: 2rem;
+                font-family: 'Raleway', sans-serif;
+                text-align: right;
+                letter-spacing: .2rem;
+                display: inline-block;
+                transition: all 2s;            
+                position: relative;
+
+                @media only screen and (max-width: 830px){
+                    text-align: center
+                }
+            }
+            
+
+            &::before{
+                content: "";
+                position: absolute;
+                width: 100%;
+                height: 0.2rem;
+                bottom: 0;
+                left: 0;
+                visibility: hidden;
+                transform: scale(0);
+                transition: all 1s;
+                transform-origin: 0 0;
+            }
+
+            &:hover,
+            &:active{
+                color: $color-green;    
+                
+                &::before{
+                    visibility: visible;
+                    transform: scale(1);
+                    background-color: $color-green;
+                }
+            }
+        }
+    }
+
+    &-copyright{
+        background-color: $color-green;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 1rem 0;
+
+
+        &__img{
+            display: block;
+            width: 8rem;
+        }
+
+        p{
+            display: block;
+            font-size: 1.3rem;
+            font-family: 'Dosis', sans-serif;  
+            font-weight: 700;
+            color: $color-white;
+            transform: translateY(.35rem);
+            margin-left: .5rem;
+        }
+    }
+}

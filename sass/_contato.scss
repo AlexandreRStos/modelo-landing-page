@@ -1,0 +1,33 @@
+.section-contato{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    justify-items: center;
+    align-items: center;
+    padding: 7rem 0 3.5rem 0;
+    justify-content: center;    
+ 
+    &__download{
+        padding: 5rem 0;
+    }
+
+    &__img{
+        display: block;
+        max-width: 25rem;
+        margin: auto;
+        margin-bottom: 2rem;
+    }
+    
+    &__box-btn{
+        text-align: center;
+        height: 7rem;;
+
+        .btn-white img{
+            transform: translateY(.2rem);
+        }
+    }
+
+    &__form{
+       
+    }
+}
+

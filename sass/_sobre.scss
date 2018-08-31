@@ -1,0 +1,32 @@
+.section-sobre{  
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 7rem 0;
+    align-items: center;
+
+    @media only screen and ( max-width: $bp-small) {
+        grid-template-columns: 1fr;
+    }  
+
+    &__box-text{
+       padding-left: 15%;
+       grid-column: 1 / 2;
+       max-width: 50rem;
+
+        @media only screen and ( max-width: $bp-small) {
+            padding: 0 10%;
+            margin: auto;
+        } 
+
+    } 
+    &__img{
+        justify-self: end;
+        max-width: 100%;
+        grid-column: 2 / 3;
+
+        @media only screen and ( max-width: $bp-small) {
+            display: none;
+            visibility: hidden;
+        }  
+    }
+}

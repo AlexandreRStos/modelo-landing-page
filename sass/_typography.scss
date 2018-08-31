@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css?family=Dosis:400,600,700|Raleway');
+
+body{
+    color: $color-gray;
+}
+
+.heading-h1{
+    font-size: 4rem;
+    font-family: 'Dosis', sans-serif;
+    font-weight: 600; 
+    text-transform: uppercase;
+    margin-bottom: 2rem;
+}
+
+.heading-h2{
+    font-family: 'Dosis', sans-serif;
+    font-size: 2.4rem;
+    color: $color-green-ligth;
+    text-transform: uppercase;
+    letter-spacing: .3rem;
+    margin-bottom: 2rem;
+}
+
+.heading-h2-right{
+    text-align: right;
+    margin-top: 3rem;
+    padding: 0 2.5%;
+}
+
+.heading-h2--white{
+    font-family: 'Dosis', sans-serif;
+    font-size: 2.4rem;
+    color: $color-white;
+    text-transform: uppercase;
+    letter-spacing: .3rem;
+    margin-bottom: 12rem;
+    text-align: center;
+
+    @media only screen and ( max-width: $bp-small) {
+        margin-bottom: 5rem;;
+    } 
+}
+
+.heading-h3{
+    font-family: 'Dosis', sans-serif;
+    font-size: 2.4rem;
+    color: $color-gray;
+    text-transform: uppercase;
+    letter-spacing: .3rem;
+    margin-bottom: 2rem;
+}
+
+.heading-h4{
+    font-family: 'Dosis', sans-serif;
+    font-size: 2rem;
+    color: $color-gray;
+    text-transform: uppercase;
+    letter-spacing: .3rem;
+    margin-bottom: 3rem;
+}
+
+.paragraphy{
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.4rem;
+    letter-spacing: .2rem;
+    font-weight: 400;
+}
+
+.paragraphy-footer{
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.3rem;
+    letter-spacing: .2rem;
+    font-weight: 400;
+    text-align: right;
+}

@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="stylesheet" href="css/style.css">	
+	<title>Conectus</title>
+</head>
+
+<body>
+
+	<div class="navigation">
+
+		<div class="navigation__logo-box">
+			<img class="navigation__logo" src="img/svg/logo-conectus.svg" alt="logo  ">
+		</div>
+
+		<nav class="navigation__nav">
+
+			<input class="navigation__input" type="checkbox" name="menuToogle" id="menuToogle">
+			<label class="navigation__label" for="menuToogle">
+				<span class="navigation__span">&nbsp;</span>
+			</label>			
+
+			<ul class="navigation__list">
+				<li class="navigation__item">
+					<a href="#sobre" class="navigation__link">Sobre</a>
+				</li>
+				<li class="navigation__item">
+					<a href="#destaques" class="navigation__link">Destaques</a>
+				</li>
+				<li class="navigation__item">
+					<a href="#funcionalidades" class="navigation__link">Funcionalidades</a>
+				</li>
+				<li class="navigation__item">
+					<a href="#baixarOApp" class="navigation__link">Baixar o App</a>
+				</li>
+			</ul>
+		</nav>
+	</div>
+
+	<header class="header">
+		<div class="header__text-box">
+			<h1 class="heading-h1">Lorem ipsum dolor sit</h1>
+			<a href="#sobre" class="btn">Saiba mais</a>
+		</div>
+		<span class="scrollDown">
+			<a href="#sobre">
+				<img src="img/svg/arrow-alt-circle-down.svg" alt="donw">
+			</a>
+		</span>
+	</header>
+
+	<main class="container">
+		
+		<section class="section-sobre" id="sobre">
+			<div class="section-sobre__box-text" data-anime="left">
+				<h2 class="heading-h2">Sobre a conectus</h2>
+				<p class="paragraphy">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt <strong>ut labore</strong>  et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. <br><br> Duis aute irure dolor <strong>in reprehenderit in voluptat</strong> e velit esse cillum dolore eu fugiat nulla pariatur.</p>
+			</div>			
+			<img class="section-sobre__img" src="img/iphone.png" alt="iphone">			
+		</section>
+
+		<section class="section-destaques" id="destaques">	
+
+			<img class="section-destaques__img" src="img/phoneslider-1.png" alt="phoneslider">	
+
+			<div class="section-destaques__box" data-anime="right">
+				<div class="section-destaques__box-text" id="slide-1">
+					<h2 class="heading-h2">lorem 1</h2>
+					<p class="paragraphy">Lorem ipsum dolor sit amet, consectetur adipiscing elit,sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisiut aliquip ex ea commodo consequat.</p>
+					<span class="slide__number">1 / 4</span>					
+				</div>
+				<div class="section-destaques__box-text" id="slide-2">
+					<h2 class="heading-h2">lorem 2</h2>
+					<p class="paragraphy"> Ipsum dolor sit amet, consectetur adipiscing elit,sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisiut aliquip ex ea commodo consequat.Lorem</p>
+					<span class="slide__number">2 / 4</span>					
+				</div>
+				<div class="section-destaques__box-text" id="slide-3">
+					<h2 class="heading-h2">lorem 3</h2>
+					<p class="paragraphy"> Dolor sit amet, consectetur adipiscing elit,sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisiut aliquip ex ea commodo consequat.Lorem ipsum</p>
+					<span class="slide__number">3 / 4</span>
+				</div>
+				<div class="section-destaques__box-text" id="slide-4">
+					<h2 class="heading-h2">lorem 4</h2>
+					<p class="paragraphy"> Sit amet, consectetur adipiscing elit,sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisiut aliquip ex ea commodo consequat.Lorem ipsum dolor</p>
+					<span class="slide__number">4 / 4</span>
+				</div>
+				<a class="next" onclick="plusSlides(-1)">&#10094;</a>
+				<a class="prev" onclick="plusSlides(1)">&#10095;</a>
+			</div>			
+		</section>
+
+		<section class="section-funcionalidades" id="funcionalidades">
+			<h2 class="heading-h2--white">As funcionalidades</h2>
+
+			<div class="wrapper-card">
+
+				<div class="card">
+					<div class="card__side card__side--front">
+						<img src="img/svg/servico-1.svg" alt="icon" class="card__img">
+						<h2 class="heading-h3">Lorem</h2>
+					</div>           
+					<div class="card__side card__side--back"> 
+						<p class="paragraphy card__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit,</p>
+						<a href="" class="btn">Lorem ipsum</a>
+					</div>
+				</div>
+
+					<div class="card">
+						<div class="card__side card__side--front">
+							<img src="img/svg/servico-2.svg" alt="icon" class="card__img">
+							<h2 class="heading-h3">Lorem</h2>
+						</div>           
+						<div class="card__side card__side--back"> 
+							<p class="paragraphy card__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit,</p>
+							<a href="" class="btn">Lorem ipsum</a>
+						</div>
+					</div>
+
+					<div class="card">
+						<div class="card__side card__side--front">
+							<img src="img/svg/servico-3.svg" alt="icon" class="card__img">
+							<h2 class="heading-h3">Lorem</h2>
+						</div>           
+						<div class="card__side card__side--back"> 
+							<p class="paragraphy card__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit,</p>
+							<a href="" class="btn">Lorem ipsum</a>
+						</div>
+					</div>
+
+					<div class="card">
+						<div class="card__side card__side--front">
+							<img src="img/svg/servico-4.svg" alt="icon" class="card__img">
+							<h2 class="heading-h3">Lorem</h2>
+						</div>           
+						<div class="card__side card__side--back"> 
+							<p class="paragraphy card__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit,</p>
+							<a href="" class="btn">Lorem ipsum</a>
+						</div>	
+					</div>	
+				</div>			
+		</section>
+
+		<section class="section-contato" id="baixarOApp">
+
+			<div class="section-contato__download" data-anime="left">
+				<img src="img/svg/logo-conectus.svg" alt="logo" class="section-contato__img">
+				<div class="section-contato__box-btn">
+					<a href="#" class="btn"><img src="img/apple.png" alt="apple">&nbsp; Donwload the app</a>
+					<a href="#" class="btn-white"><img src="img/play.png" alt="google play">&nbsp; Donwload the app</a>
+				</div>
+			</div>
+
+			<div class="section-contato__form" data-anime="right">
+				<form class="form" action="#" autocomplete="off">
+					<h2 class="heading-h2 heading-h2-right">QUER FALAR COM A GENTE?</h2>
+
+					<div class="input-box">
+						<input type="text" name="name" id="name" pattern="[a-z\s]+$" required="required">
+						<label for="name">Nome Completo</label>
+					</div>
+					<div class="input-box">
+						<input type="email" name="email" id="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required="required">
+						<label for="email">email@exemplo.com.br</label>
+					</div>
+					<div class="input-box">
+						<input type="tel" name="tel" id="tel" maxlength="15" pattern="[0-9]{2} [0-9]{4,6}-[0-9]{3,4}$" required="required">
+						<label for="tel">Tel DDD XXXX - XXXX</label>
+					</div>
+					<div class="input-box">
+						<textarea name="mensagem" id="mensagem" cols="30" rows="10" required="required"></textarea>
+						<label for="name">Sua mensagen</label>
+					</div>
+					<input type="submit" class="btn">
+				</form>
+			</div>
+		</section>
+	</main>
+	<footer class="footer">
+		<div class="footer-nav">
+			<div class="footer-nav__links">
+				<h4 class="heading-h4">conectus nas redes</h4>
+				<div class="footer-nav__redeSociais">
+					<a href="#"><img src="img/svg/facebook.svg" alt="facebook"></a>
+					<a href="#"><img src="img/svg/twiter.svg" alt="twitter"></a>
+					<a href="#"><img src="img/svg/instagram.svg" alt="instagram"></a>
+					<a href="#"><img src="img/svg/youtube.svg" alt="youtube"></a>
+					<a href="#"><img src="img/svg/whatsapp.svg" alt="whatsapp"></a>
+					<a href="#"><img src="img/svg/skype.svg" alt="skype"></a>
+				</div>
+			</div>
+			<div class="footer-nav__contato">
+				<p class="paragraphy-footer">rua nossa senhora de copacabana,<br>1355 - sala 2 - copacabana<br>rio de janeiro</p>
+				<p>
+					<a class="footer-nav__contato--link" href="mailto:olar@conectus.com">olar@conectus.com </a>&nbsp; &bull; &nbsp;
+					<a class="footer-nav__contato--link" href="tel:+552199999-9992"> +55 21 99999-9922</a>
+				</p>
+			</div>
+		</div>
+		<div class="footer-copyright">
+			<img src="img/svg/conectus-branco.svg" alt="" class="footer-copyright__img">
+			<p>- 2018</p>
+		</div>
+	</footer>
+	<script src="js/animeScroll.js"></script>
+	<script src="js/slideInfo.js"></script>
+	
+
+</body>
+</html>

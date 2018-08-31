@@ -1,0 +1,24 @@
+{
+  "name": "landing page",
+  "version": "1.0.0",
+  "description": "landing page app",
+  "main": "index.js",
+  "scripts": {
+    "watch:sass": "node-sass sass/main.scss css/style.css -w",
+    "devserver": "live-server ",
+    "start": "npm-run-all --parallel devserver watch:sass",
+    "compile:sass": "node-sass sass/main.scss css/style.comp.css",
+    "prefix:css": "postcss --use autoprefixer -c 'last 25 versions' css/style.comp.css -o css/style.prefix.css",
+    "compress:css": "node-sass css/style.prefix.css css/style.css --output-style compressed",
+    "build:css": "npm-run-all compile:sass prefix:css compress:css"
+  },
+  "author": "Alexandre Ramos dos Santos",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^8.6.2",
+    "node-sass": "^4.9.3",
+    "npm-run-all": "^4.1.3",
+    "postcss-cli": "^5.0.0"
+  }
+}
+
