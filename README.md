@@ -1,0 +1,1 @@
+Esta simple Landing Page foi feita Sass, e pequenas Animações com css anime e JS
