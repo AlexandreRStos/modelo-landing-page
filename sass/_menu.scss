@@ -201,7 +201,8 @@
             }
     
             &:hover,
-            &:active{
+            &:active,
+            &:focus {
                 color: $color-green;    
                     
                 &::before{

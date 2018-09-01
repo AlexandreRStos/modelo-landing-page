@@ -331,9 +331,9 @@ input[type="submit"] {
     transition: all 1s;
     transform-origin: 0;
     background-color: #11967D; }
-  .navigation__link:hover, .navigation__link:active {
+  .navigation__link:hover, .navigation__link:active, .navigation__link:focus {
     color: #11967D; }
-    .navigation__link:hover::before, .navigation__link:active::before {
+    .navigation__link:hover::before, .navigation__link:active::before, .navigation__link:focus::before {
       visibility: visible;
       transform: scaleX(1); } }
 
