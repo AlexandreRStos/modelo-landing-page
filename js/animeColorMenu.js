@@ -1,8 +1,3 @@
-document.querySelector('#sobre').scrollIntoView({ 
-  block: 'end',
-  behavior: 'smooth'
-})
-
 window.onscroll = () => animeColor()
 
 const $navigation = document.querySelector('.navigation')
