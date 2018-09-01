@@ -1,13 +1,16 @@
-.navigation{
+.navigation{   
     display: flex;
     align-items: center;
     justify-content: space-between;
     position: absolute;
     width: 100%;
-    padding: 3rem 3rem 0;       
-
-    &__logo-box{
-
+    padding: 3rem;    
+    z-index: 10; 
+    transition: all .4s;
+    
+    &.--color{
+        background-color: $color-green-ligth;  
+        position: fixed;
     }
 
     &__logo{
@@ -20,18 +23,14 @@
         z-index: -999;
     }
 
-    &__nav{
-        
-    }
-
     &__list{
         list-style: none;
         display: flex;
-
     }
 
     &__item{
         margin: 0 1.5rem;
+        color: $color-white;
 
     }
 
@@ -41,12 +40,16 @@
         &:visited{
             text-decoration: none;
             font-size: 1.4rem;
-            font-family: 'Dosis', sans-serif;
-            color: $color-gray;
+            font-family: 'Dosis', sans-serif;            
             position: relative;
             margin-bottom: .2rem;
             letter-spacing: .2rem;
             display: inline-block;
+            color: $color-gray;  
+
+            &.--color{
+                color: $color-white;
+            }          
         }
         
         &::before{
