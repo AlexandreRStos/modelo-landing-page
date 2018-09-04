@@ -1,155 +1,142 @@
 ////////////////////////////
 /// buttom
-.btn{
-    &,
-    &:link,
-    &:visited{
-        display: inline-block;
-        text-decoration: none;
-        font-size: 1.4rem;
-        font-family: 'dosis', sans-serif; 
-        color: $color-white;
-        background-color: $color-green-ligth;
-        border: 2px solid $color-green-ligth;
-        padding: .7rem 3rem;
-        border-radius: .5rem;
-        box-shadow: 0 .2rem .5rem rgba($color-black, 0.2);
-        cursor: pointer; 
-        margin: .5rem;    
-        transition: all .1s ease-in;
-    }    
+.btn {
+  &,
+  &:link,
+  &:visited {
+    display: inline-block;
+    text-decoration: none;
+    font-size: 1.4rem;
+    font-family: "dosis", sans-serif;
+    color: $color-white;
+    background-color: $color-green-ligth;
+    border: 2px solid $color-green-ligth;
+    padding: 0.7rem 3rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 0.2rem 0.5rem rgba($color-black, 0.2);
+    cursor: pointer;
+    margin: 0.5rem;
+    transition: all 0.1s ease-in;
+  }
 
-    &:hover{
-        transform: translateY(-3px);
-        box-shadow: 0 1rem 1.5rem rgba($color-black, .3);        
-    }
-   
-    &:active,
-    &:focus{
-        outline: none;
-        transform: translateY(-1px);
-        box-shadow: 0 .7rem 1.3rem rgba($color-black, .4);        
-    }
+  &:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 1rem 1.5rem rgba($color-black, 0.3);
+  }
+
+  &:active,
+  &:focus {
+    outline: none;
+    transform: translateY(-1px);
+    box-shadow: 0 0.7rem 1.3rem rgba($color-black, 0.4);
+  }
 }
 
-.btn-white{
-    &,
-    &:link,
-    &:visited{
-        display: inline-block;
-        text-decoration: none;
-        font-size: 1.4rem;
-        font-family: 'dosis', sans-serif; 
-        color: $color-green-ligth;
-        background-color: $color-white;
-        border: 2px solid $color-green-ligth;
-        padding: .7rem 3rem;
-        border-radius: .5rem;
-        box-shadow: 0 .2rem .5rem rgba($color-black, 0.1);
-        cursor: pointer;
-        margin: .5rem;
-          
-        transition: all .1s ease-in;
-    }    
+.btn-white {
+  &,
+  &:link,
+  &:visited {
+    display: inline-block;
+    text-decoration: none;
+    font-size: 1.4rem;
+    font-family: "dosis", sans-serif;
+    color: $color-green-ligth;
+    background-color: $color-white;
+    border: 2px solid $color-green-ligth;
+    padding: 0.7rem 3rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 0.2rem 0.5rem rgba($color-black, 0.1);
+    cursor: pointer;
+    margin: 0.5rem;
 
-    &:hover{
-        transform: translateY(-3px);
-        box-shadow: 0 1rem 1.5rem rgba($color-black, .2);        
-    }
-   
-    &:active,
-    &:focus{
-        outline: none;
-        transform: translateY(-1px);
-        box-shadow: 0 .7rem 1.3rem rgba($color-black, .4);        
-    }
+    transition: all 0.1s ease-in;
+  }
+
+  &:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 1rem 1.5rem rgba($color-black, 0.2);
+  }
+
+  &:active,
+  &:focus {
+    outline: none;
+    transform: translateY(-1px);
+    box-shadow: 0 0.7rem 1.3rem rgba($color-black, 0.4);
+  }
 }
 
 ////////////////////////////////////////////////////////
 //////FORM
 
-.form{
-    display: block;
-    width: 100%;
-    position: relative;
-    height: calc(auto + 100px) ;
-    
+.form {
+  display: block;
+  width: 100%;
+  position: relative;
+  height: calc(auto + 100px);
 }
-.input-box{
-    display: block;
-    position: relative;
-    width: 95%;
-    height: 4.5rem;
-    margin: auto;
+
+.input-box {
+  display: block;
+  position: relative;
+  width: 95%;
+  height: 4.5rem;
+  margin: auto;
 }
 
 .input-box input,
 .input-box label,
-.input-box textarea{
-    position: absolute;
-    width: 100%;
-    height: 3.5rem;
-    font-size: 1.4rem;
-    font-family: 'Dosis', sans-serif;
-    color: $color-gray-light;
-    transition: all .6s ;
-    outline: none;
-    border: none;
-    background-color: #eee;
-    border-radius: .5rem;
-    letter-spacing: 2px;
+.input-box textarea {
+  position: absolute;
+  width: 100%;
+  height: 3.5rem;
+  font-size: 1.4rem;
+  font-family: "Dosis", sans-serif;
+  color: $color-gray-light;
+  transition: all 0.6s;
+  outline: none;
+  border: none;
+  background-color: #eee;
+  border-radius: 0.5rem;
+  letter-spacing: 2px;
 }
 
-.input-box input,
-.input-box textarea{
-    
+.input-box textarea {
+  height: 10rem;
+  // display: block;
 }
-
-.input-box textarea{
-    height: 10rem;
-    // display: block;
-}
-.input-box label{
-    width: auto;
-    height: auto;
-    transform: translate( 1rem, .5rem);
-    user-select: none;
+.input-box label {
+  width: auto;
+  height: auto;
+  transform: translate(1rem, 0.5rem);
+  user-select: none;
 }
 
 .input-box input:focus + label,
 .input-box input:valid + label,
 .input-box textarea:focus + label,
-.input-box textarea:valid + label{
-    transform: translate( 0rem, -1.1rem) scale(0.8);
-    background-color: transparent;
-    color: $color-green;   
+.input-box textarea:valid + label {
+  transform: translate(0rem, -1.1rem) scale(0.8);
+  background-color: transparent;
+  color: $color-green;
 }
 
 .input-box input:focus,
 .input-box input:valid,
 .input-box textarea:focus,
-.input-box textarea:valid{
-    border-bottom: .2rem solid $color-green-ligth;
-    background-color: #eff;
+.input-box textarea:valid {
+  border-bottom: 0.2rem solid $color-green-ligth;
+  background-color: #eff;
 }
 
-.input-box input:invalid:focus{
-    color: tomato;
-    border-bottom: .2rem solid tomato;
+.input-box input:invalid:focus {
+  color: tomato;
+  border-bottom: 0.2rem solid tomato;
 }
 
-input[type="submit"]{
-    display: block;
-    position: relative;
-    margin-left: auto;
-    margin-top: 7rem;
-    margin-bottom: 3rem;   
+input[type="submit"] {
+  display: block;
+  position: relative;
+  margin-left: auto;
+  margin-top: 7rem;
+  margin-bottom: 3rem;
 }
-
-
-
-
-
-
-
-

@@ -25,20 +25,18 @@ $bp-small: 600px;
 *::after{
     padding: 0;
     margin: 0;
-    box-sizing: inherit;
+    // box-sizing: inherit;
 }
 
 html{
-    box-sizing: border-box;
-    font-size: 10px;
+    // box-sizing: border-box;
+    font-size: 10px; 
 }
 
 body{
-    line-height: 1.6; 
-  
+    line-height: 1.6;
 }
 
 .container{
-    overflow: hidden;
+    overflow-x: hidden; 
 }
-
