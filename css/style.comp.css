@@ -462,7 +462,7 @@ input[type="submit"] {
   .section-funcionalidades .wrapper-card {
     display: flex;
     max-width: 100rem;
-    margin: auto;
+    margin: 50px auto;
     justify-content: space-evenly; }
     @media only screen and (max-width: 900px) {
       .section-funcionalidades .wrapper-card {
@@ -664,8 +664,7 @@ input[type="submit"] {
 
 [data-anime] {
   opacity: 0;
-  transition: all .3s;
-  overflow: hidden; }
+  transition: all .3s; }
 
 [data-anime="left"] {
   transform: translateX(-5rem); }
@@ -673,6 +672,9 @@ input[type="submit"] {
 [data-anime="right"] {
   transform: translateX(5rem); }
 
+[data-anime="up"] {
+  transform: translateY(5rem); }
+
 [data-anime].animate {
   opacity: 1;
-  transform: translateY(0); }
+  transform: translate(0); }

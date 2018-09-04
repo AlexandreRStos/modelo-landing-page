@@ -1,7 +1,6 @@
 [data-anime]{
     opacity: 0;
-    transition: all .3s;
-    overflow: hidden;
+    transition: all .3s;    
 }
 
 [data-anime="left"]{
@@ -12,7 +11,11 @@
     transform: translateX(5rem);
 }
 
+[data-anime="up"]{
+    transform: translateY(5rem);
+}
+
 [data-anime].animate{
     opacity: 1;
-    transform: translateY(0);
+    transform: translate(0);
 }
