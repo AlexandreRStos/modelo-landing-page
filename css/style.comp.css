@@ -356,7 +356,11 @@ input[type="submit"] {
   .header .scrollDown {
     position: absolute;
     bottom: 2rem;
-    animation: scrollDown .8s infinite; }
+    animation: scrollDown 0.8s infinite; }
+    .header .scrollDown > svg {
+      fill: #444b54;
+      width: 3rem;
+      height: 3rem; }
 
 @keyframes scrollDown {
   0% {
@@ -458,7 +462,7 @@ input[type="submit"] {
   .section-funcionalidades .wrapper-card {
     display: flex;
     max-width: 100rem;
-    margin: auto;
+    margin: 50px auto;
     justify-content: space-evenly; }
     @media only screen and (max-width: 900px) {
       .section-funcionalidades .wrapper-card {
@@ -496,7 +500,8 @@ input[type="submit"] {
       transform: rotateY(180deg);
       background-color: #ffffff; }
   .card__img {
-    width: 6rem; }
+    width: 6rem;
+    height: 5rem; }
   .card__text {
     display: block;
     text-align: center;
@@ -530,8 +535,13 @@ input[type="submit"] {
   .section-contato__box-btn {
     text-align: center;
     height: 7rem; }
-    .section-contato__box-btn .btn-white img {
-      transform: translateY(0.2rem); }
+    .section-contato__box-btn svg {
+      width: 2rem;
+      height: 2rem;
+      transform: translateY(0.4rem);
+      fill: #fff; }
+    .section-contato__box-btn .btn-white > svg {
+      fill: #41ceb3; }
   .section-contato__form {
     grid-column: 3 / 4; }
     @media only screen and (max-width: 900px) {
@@ -558,6 +568,10 @@ input[type="submit"] {
         margin-bottom: 3rem; } }
     .footer-nav__icon {
       padding-right: 1rem; }
+      .footer-nav__icon > svg {
+        width: 4rem;
+        height: 4rem;
+        fill: #444b54; }
       @media only screen and (max-width: 830px) {
         .footer-nav__icon {
           margin: 0 0.25rem;
@@ -619,6 +633,7 @@ input[type="submit"] {
       vertical-align: middle; }
     .footer-copyright .logo {
       width: 8rem;
+      height: 2rem;
       vertical-align: middle; }
     .footer-copyright .link, .footer-copyright .link:link, .footer-copyright .link:visited {
       font-weight: 700;
@@ -649,8 +664,7 @@ input[type="submit"] {
 
 [data-anime] {
   opacity: 0;
-  transition: all .3s;
-  overflow: hidden; }
+  transition: all .3s; }
 
 [data-anime="left"] {
   transform: translateX(-5rem); }
@@ -658,6 +672,9 @@ input[type="submit"] {
 [data-anime="right"] {
   transform: translateX(5rem); }
 
+[data-anime="up"] {
+  transform: translateY(5rem); }
+
 [data-anime].animate {
   opacity: 1;
-  transform: translateY(0); }
+  transform: translate(0); }

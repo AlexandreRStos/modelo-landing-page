@@ -4,9 +4,9 @@
 
     .wrapper-card{
        display: flex;
-       max-width: 100rem;
-       margin: auto;
-       justify-content: space-evenly;
+       max-width: 100rem;  
+       margin: 50px auto;
+       justify-content: space-evenly;       
        
         @media only screen and ( max-width: $bp-medium) {
             flex-wrap: wrap;
@@ -24,7 +24,7 @@
         width: 28rem;
         height: 25rem;
         perspective: 150rem;
-        margin: 1rem;
+        margin: 1rem;        
 
         &__side{
             width: 100%;
@@ -53,6 +53,7 @@
         
         &__img{
             width: 6rem;
+            height: 5rem;
         }
 
         &__text{

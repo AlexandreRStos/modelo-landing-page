@@ -16,8 +16,7 @@ $menulinks.forEach(link => {
 function scrollToIdOnClick (event) {
   // Prevenir efeito padrao do browser
   event.preventDefault()
-  const to = getScrollTopByHref(event.target) - 90 // menos height menu
-
+  const to = getScrollTopByHref(event.currentTarget) - 90 // menos height menu
   scrollToPosition(to)
 }
 

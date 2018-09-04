@@ -9,9 +9,11 @@
 </head>
 
 <body>
-	<div class="navigation">
+	<div class="navigation" id='top'>
 		<div class="navigation__logo-box">
-			<img class="navigation__logo" src="img/svg/logotipo-exemplo-green.svg" alt="logo">
+			<a href="#top">
+				<img class="navigation__logo" src="img/logotipo-exemplo-green.svg" alt="logo">
+			</a>
 		</div>
 
 		<nav class="navigation__nav">
@@ -38,12 +40,16 @@
 	</div>
 
 	<header class="header">
-		<div class="header__text-box">
+		<div class="header__text-box" data-anime="up">
 			<h1 class="heading-h1">Lorem ipsum dolor sit</h1>
 			<a href="#sobre" class="btn">Saiba mais</a>
 		</div>
-						
-		<img class="scrollDown" src="img/svg/arrow-alt-circle-down.svg" alt="donw">			
+		
+		<a href="#sobre" class="scrollDown">
+		<svg >
+			<use xlink:href='img/symbol-defs.svg#icon-arrow-outline-down'></use>
+		</svg></a>
+					
 	</header>
 
 	<main class="container">		
@@ -86,9 +92,11 @@
 		<section class="section-funcionalidades" id="funcionalidades">
 			<h2 class="heading-h2--white">As funcionalidades</h2>
 			<div class="wrapper-card">
-				<div class="card">
+				<div class="card" data-anime="up">
 					<div class="card__side card__side--front">
-						<img src="img/svg/servico-1.svg" alt="icon" class="card__img">
+						<svg class="card__img">
+							<use xlink:href='img/symbol-defs.svg#icon-servico-1'></use>
+						</svg >						
 						<h2 class="heading-h3">Lorem</h2>
 					</div>           
 					<div class="card__side card__side--back"> 
@@ -97,9 +105,11 @@
 					</div>
 				</div>
 
-					<div class="card">
+					<div class="card" data-anime="up">
 						<div class="card__side card__side--front">
-							<img src="img/svg/servico-2.svg" alt="icon" class="card__img">
+							<svg class="card__img">
+								<use xlink:href='img/symbol-defs.svg#icon-servico-2'></use>
+							</svg >								
 							<h2 class="heading-h3">Lorem</h2>
 						</div>           
 						<div class="card__side card__side--back"> 
@@ -108,9 +118,11 @@
 						</div>
 					</div>
 
-					<div class="card">
+					<div class="card" data-anime="up">
 						<div class="card__side card__side--front">
-							<img src="img/svg/servico-3.svg" alt="icon" class="card__img">
+							<svg class="card__img">
+									<use xlink:href='img/symbol-defs.svg#icon-servico-3'></use>
+							</svg >							
 							<h2 class="heading-h3">Lorem</h2>
 						</div>           
 						<div class="card__side card__side--back"> 
@@ -119,9 +131,11 @@
 						</div>
 					</div>
 
-					<div class="card">
+					<div class="card" data-anime="up">
 						<div class="card__side card__side--front">
-							<img src="img/svg/servico-4.svg" alt="icon" class="card__img">
+							<svg class="card__img">
+								<use xlink:href='img/symbol-defs.svg#icon-servico-4'></use>
+							</svg >						
 							<h2 class="heading-h3">Lorem</h2>
 						</div>           
 						<div class="card__side card__side--back"> 
@@ -134,10 +148,24 @@
 
 		<section class="section-contato" id="baixarOApp">
 			<div class="section-contato__download" data-anime="left">
-				<img src="img/svg/logotipo-exemplo-green.svg" alt="logo" class="section-contato__img">
+				<svg class="section-contato__img">
+					<use xlink:href='img/symbol-defs.svg#icon-logotipo-exemplo-green'></use>
+				</svg >	
 				<div class="section-contato__box-btn">
-					<a href="/modelo-landing-page/" class="btn"><img src="img/apple.png" alt="apple">&nbsp; Donwload the app</a>
-					<a href="/modelo-landing-page/" class="btn-white"><img src="img/play.png" alt="google play">&nbsp; Donwload the app</a>
+
+					<a href="/modelo-landing-page/" class="btn">
+						<svg>
+							<use xlink:href='img/symbol-defs.svg#icon-apple'></use>
+						</svg>						
+						&nbsp; Donwload the app
+					</a>
+
+					<a href="/modelo-landing-page/" class="btn-white">
+						<svg>
+							<use xlink:href='img/symbol-defs.svg#icon-play'></use>
+						</svg>						
+						&nbsp; Donwload the app
+					</a>
 				</div>
 			</div>
 
@@ -172,15 +200,33 @@
 			<div class="footer-nav__links">
 				<h4 class="heading-h4">Exemplo nas redes</h4>
 				<div class="footer-nav__redeSociais">
-					<a class="footer-nav__icon" href="/modelo-landing-page/"><img src="img/svg/facebook.svg" alt="facebook"></a>
-					<a class="footer-nav__icon" href="/modelo-landing-page/"><img src="img/svg/twiter.svg" alt="twitter"></a>
-					<a class="footer-nav__icon" href="/modelo-landing-page/"><img src="img/svg/instagram.svg" alt="instagram"></a>
-					<a class="footer-nav__icon" href="/modelo-landing-page/"><img src="img/svg/youtube.svg" alt="youtube"></a>
-					<a class="footer-nav__icon" href="/modelo-landing-page/"><img src="img/svg/whatsapp.svg" alt="whatsapp"></a>
-					<a class="footer-nav__icon" href="/modelo-landing-page/"><img src="img/svg/skype.svg" alt="skype"></a>
+					<a class="footer-nav__icon" href="/modelo-landing-page/" data-anime="left">
+						<svg>
+							<use xlink:href='img/symbol-defs.svg#icon-facebook'></use>
+						</svg></a>
+					<a class="footer-nav__icon" href="/modelo-landing-page/" data-anime="left">
+						<svg>
+							<use xlink:href='img/symbol-defs.svg#icon-twitter'></use>
+						</svg></a>
+					<a class="footer-nav__icon" href="/modelo-landing-page/" data-anime="left">
+						<svg>
+							<use xlink:href='img/symbol-defs.svg#icon-instagram'></use>
+						</svg></a>
+					<a class="footer-nav__icon" href="/modelo-landing-page/" data-anime="left">
+						<svg>
+							<use xlink:href='img/symbol-defs.svg#icon-youtube'></use>
+						</svg></a>
+					<a class="footer-nav__icon" href="/modelo-landing-page/" data-anime="left">
+						<svg>
+							<use xlink:href='img/symbol-defs.svg#icon-whatsapp'></use>
+						</svg></a>
+					<a class="footer-nav__icon" href="/modelo-landing-page/" data-anime="left">
+						<svg>
+							<use xlink:href='img/symbol-defs.svg#icon-skype'></use>
+						</svg></a>					
 				</div>
 			</div>
-			<div class="footer-nav__contato">
+			<div class="footer-nav__contato" data-anime="right">
 				<p class="paragraphy-footer">Av. Paulista, 123 - sala 12 <br>São Paulo - SP</p>
 				<p>
 					<a class="footer-nav__contato--link" href="mailto:ola@conectus.com">ola@exemplo.com </a>&nbsp; &ordm; &nbsp;
@@ -190,7 +236,11 @@
 		</div>
 
 		<div class="footer-copyright">
-			 <p><img class="logo" src="img/svg/logotipo-exemplo-white.svg" alt="logo"> &copy; 2018 Desenvolvido por <a class="link" href="https://alexandreramos.cf" target="_blank">Alexandre Ramos </a> || Design por <a class="link" href="https://ti-rex.com.br" target="_blank">T-Rex</a></p>			 	
+			 <p>
+				 <svg class="logo">
+						<use xlink:href='img/symbol-defs.svg#icon-logotipo-exemplo-white'></use>
+					</svg>	
+				  &copy; 2018 Desenvolvido por <a class="link" href="https://alexandreramos.cf" target="_blank">Alexandre Ramos </a> || Design por <a class="link" href="https://ti-rex.com.br" target="_blank">T-Rex</a></p>			 	
 		</div>
 
 	</footer>

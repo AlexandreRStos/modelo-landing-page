@@ -26,10 +26,16 @@
     
     &__box-btn{
         text-align: center;
-        height: 7rem;;
+        height: 7rem;
 
-        .btn-white img{
-            transform: translateY(.2rem);
+        svg {
+            width: 2rem;
+            height: 2rem;
+            transform: translateY(.4rem);
+            fill: #fff;
+        }
+        .btn-white > svg{
+            fill: $color-green-ligth;
         }
     }
 
