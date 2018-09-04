@@ -9,15 +9,12 @@
 </head>
 
 <body>
-
 	<div class="navigation">
-
 		<div class="navigation__logo-box">
 			<img class="navigation__logo" src="img/svg/logotipo-exemplo-green.svg" alt="logo">
 		</div>
 
 		<nav class="navigation__nav">
-
 			<input class="navigation__input" type="checkbox" name="menuToogle" id="menuToogle">
 			<label class="navigation__label" for="menuToogle">
 				<span class="navigation__span">&nbsp;</span>
@@ -45,6 +42,7 @@
 			<h1 class="heading-h1">Lorem ipsum dolor sit</h1>
 			<a href="#sobre" class="btn">Saiba mais</a>
 		</div>
+
 		<span class="scrollDown">
 			<a href="#sobre">
 				<img src="img/svg/arrow-alt-circle-down.svg" alt="donw">
@@ -52,8 +50,7 @@
 		</span>
 	</header>
 
-	<main class="container">
-		
+	<main class="container">		
 		<section class="section-sobre" id="sobre">
 			<div class="section-sobre__box-text" data-anime="left">
 				<h2 class="heading-h2">Sobre a Exemplo</h2>
@@ -62,14 +59,12 @@
 			<img class="section-sobre__img" src="img/iphone.png" alt="iphone">			
 		</section>
 
-		<section class="section-destaques" id="destaques">	
-
-			<img class="section-destaques__img" src="img/phoneslider-1.png" alt="phoneslider">	
-
+		<section class="section-destaques" id="destaques">
+			<img class="section-destaques__img" src="img/phoneslider-1.png" alt="phoneslider">
 			<div class="section-destaques__box" data-anime="right">
 				<div class="section-destaques__box-text" id="slide-1">
 					<h2 class="heading-h2">lorem 1</h2>
-					<p class="paragraphy">Lorem ipsum dolor sit amet, consectetur adipiscing elit,sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisiut aliquip ex ea commodo consequat.</p>
+					<p class="paragraphy">Lorem ipsum dolor sit amet, consectetur adipiscing elit,sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisiut aliquip ex ea commodo consequat consequat.</p>
 					<span class="slide__number">1 / 4</span>					
 				</div>
 				<div class="section-destaques__box-text" id="slide-2">
@@ -94,9 +89,7 @@
 
 		<section class="section-funcionalidades" id="funcionalidades">
 			<h2 class="heading-h2--white">As funcionalidades</h2>
-
 			<div class="wrapper-card">
-
 				<div class="card">
 					<div class="card__side card__side--front">
 						<img src="img/svg/servico-1.svg" alt="icon" class="card__img">
@@ -144,7 +137,6 @@
 		</section>
 
 		<section class="section-contato" id="baixarOApp">
-
 			<div class="section-contato__download" data-anime="left">
 				<img src="img/svg/logotipo-exemplo-green.svg" alt="logo" class="section-contato__img">
 				<div class="section-contato__box-btn">
@@ -178,35 +170,40 @@
 			</div>
 		</section>
 	</main>
+
 	<footer class="footer">
 		<div class="footer-nav">
 			<div class="footer-nav__links">
 				<h4 class="heading-h4">Exemplo nas redes</h4>
 				<div class="footer-nav__redeSociais">
-					<a href="#"><img src="img/svg/facebook.svg" alt="facebook"></a>
-					<a href="#"><img src="img/svg/twiter.svg" alt="twitter"></a>
-					<a href="#"><img src="img/svg/instagram.svg" alt="instagram"></a>
-					<a href="#"><img src="img/svg/youtube.svg" alt="youtube"></a>
-					<a href="#"><img src="img/svg/whatsapp.svg" alt="whatsapp"></a>
-					<a href="#"><img src="img/svg/skype.svg" alt="skype"></a>
+					<a class="footer-nav__icon" href="#"><img src="img/svg/facebook.svg" alt="facebook"></a>
+					<a class="footer-nav__icon" href="#"><img src="img/svg/twiter.svg" alt="twitter"></a>
+					<a class="footer-nav__icon" href="#"><img src="img/svg/instagram.svg" alt="instagram"></a>
+					<a class="footer-nav__icon" href="#"><img src="img/svg/youtube.svg" alt="youtube"></a>
+					<a class="footer-nav__icon" href="#"><img src="img/svg/whatsapp.svg" alt="whatsapp"></a>
+					<a class="footer-nav__icon" href="#"><img src="img/svg/skype.svg" alt="skype"></a>
 				</div>
 			</div>
 			<div class="footer-nav__contato">
-				<p class="paragraphy-footer">av. Paulista,<br>0000 - sala 0 - São Paulo<br>São Paulo</p>
+				<p class="paragraphy-footer">Av. Paulista, 123 - sala 12 <br>São Paulo - SP</p>
 				<p>
-					<a class="footer-nav__contato--link" href="mailto:ola@conectus.com">ola@exemplo.com </a>&nbsp; &bull; &nbsp;
+					<a class="footer-nav__contato--link" href="mailto:ola@conectus.com">ola@exemplo.com </a>&nbsp; &ordm; &nbsp;
 					<a class="footer-nav__contato--link" href="tel:+552199999-9992"> +55 11 97718-5120</a>
 				</p>
 			</div>
 		</div>
+
 		<div class="footer-copyright">
-			<img src="img/svg/logotipo-exemplo-white.svg" alt="" class="footer-copyright__img">
-			<p> &copy; 2018 - Desenvolvido por Alexandre Ramos || Design por Pam Turk </p>
+			 <p><img class="logo" src="img/svg/logotipo-exemplo-white.svg" alt="logo"> &copy; 2018 Desenvolvido por <a class="link" href="#">Alexandre Ramos </a> || Design por <a class="link" href="#">T-Rex</a></p>			 	
 		</div>
+
 	</footer>
-	<script src="js/animeColorMenu.js"></script>
+	
+	<script src="js/stickyMenu.js"></script>
 	<script src="js/animeScroll.js"></script>
 	<script src="js/slideInfo.js"></script>
+	<script src="js/scrollSmooth.js"></script>
+	<script src="js/closeMenuMobile.js"></script>
 
 </body>
 </html>

@@ -1,9 +1,10 @@
 .section-destaques{
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 1fr repeat(2, minmax(1fr 45rem)) 1fr;
     justify-items: center;
     padding: 5rem 0 0 0;
     position: relative;
+    
 
     @media only screen and ( max-width: $bp-small) {
         grid-template-columns: 365px;
@@ -11,11 +12,11 @@
     }
 
     &__box{
-        grid-column: 2 / -1; 
+        grid-column: 3 / 4; 
         align-self: center; 
         padding-left: 5%;
-        max-width: 55rem;
-        margin-right: auto;
+        max-width: 45rem;
+        // margin-right: auto;
 
         @media only screen and ( max-width: $bp-small) {
             grid-area: 1 / 1 / 2 / 2;            
@@ -27,7 +28,7 @@
     }
 
     &__img{
-        grid-column: 1 / 2;
+        grid-column: 2 / 3;
         max-width: 100%;
         align-self: end;
         justify-self: center;
@@ -35,7 +36,7 @@
 
         @media only screen and ( max-width: $bp-small) {
             grid-area: 1 / 1 / 2 / 2;        
-            width:38rem;
+            width:32rem;
             height:42rem;                        
         }    
     }
@@ -46,7 +47,7 @@
         width: 90%; 
 
         @media only screen and ( max-width: $bp-small) {
-            width: 28rem;
+            width: 23rem;
             justify-self: center;
         }           
 
