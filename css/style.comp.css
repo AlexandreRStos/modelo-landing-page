@@ -556,7 +556,8 @@ input[type="submit"] {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
     padding: 5rem 7%;
-    align-items: center; }
+    align-items: center;
+    overflow: hidden; }
     @media only screen and (max-width: 830px) {
       .footer-nav {
         grid-template-columns: 1fr;
@@ -674,6 +675,9 @@ input[type="submit"] {
 
 [data-anime="up"] {
   transform: translateY(5rem); }
+
+[data-anime="down"] {
+  transform: translateY(-5rem); }
 
 [data-anime].animate {
   opacity: 1;
