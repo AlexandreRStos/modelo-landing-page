@@ -1,6 +1,6 @@
 .section-sobre {
   display: grid;
-  grid-template-columns: 1fr repeat(2, 50rem) 1fr;
+  grid-template-columns: 1fr repeat(2, minmax(30rem, 45rem)) 1fr;
   padding: 7rem 0;
   align-items: center;
   position: relative;
@@ -11,6 +11,8 @@
 
   &__box-text {  
     grid-column: 2 / 3;  
+    margin-left: 20px;
+    z-index: 1;
 
     @media only screen and (max-width: $bp-small) {
       padding: 0 10%;
@@ -21,7 +23,9 @@
     max-width: 100%; 
     position: absolute;
     right: 0;
-    top: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: -1;
 
     @media only screen and (max-width: $bp-small) {
       display: none;
