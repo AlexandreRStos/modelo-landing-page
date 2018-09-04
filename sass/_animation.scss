@@ -15,6 +15,10 @@
     transform: translateY(5rem);
 }
 
+[data-anime="down"]{
+    transform: translateY(-5rem);
+}
+
 [data-anime].animate{
     opacity: 1;
     transform: translate(0);
