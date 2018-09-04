@@ -21,6 +21,12 @@
     }
 
     &__icon {
+      & > svg {
+        width: 4rem;
+        height: 4rem;
+        fill: $color-gray;
+      }
+        
       padding-right: 1rem;
 
       @media only screen and (max-width: 830px) {
@@ -109,6 +115,7 @@
 
     & .logo {
       width: 8rem;
+      height: 2rem;
       vertical-align: middle;
     }
 
