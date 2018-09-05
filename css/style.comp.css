@@ -205,6 +205,7 @@ input[type="submit"] {
     position: fixed; }
   .navigation__logo {
     width: 14.6rem;
+    height: 3rem;
     margin-bottom: -15px;
     vertical-align: center; }
   .navigation__input {
@@ -240,9 +241,9 @@ input[type="submit"] {
     transition: all 1s;
     transform-origin: 0;
     background-color: #11967D; }
-  .navigation__link:hover, .navigation__link:active {
+  .navigation__link.--active, .navigation__link:hover, .navigation__link:active {
     color: #11967D; }
-    .navigation__link:hover::before, .navigation__link:active::before {
+    .navigation__link.--active::before, .navigation__link:hover::before, .navigation__link:active::before {
       visibility: visible;
       transform: scaleX(1); }
 
