@@ -17,6 +17,7 @@
 
   &__logo {
     width: 14.6rem;
+    height: 3rem;
     margin-bottom: -15px;
     vertical-align: center;
   }
@@ -57,6 +58,7 @@
       }
     }
   
+    
     &::before {
       content: "";
       position: absolute;
@@ -71,7 +73,7 @@
       background-color: $color-green;
     }
 
-    
+    &.--active,
     &:hover,
     &:active {
       color: $color-green;
